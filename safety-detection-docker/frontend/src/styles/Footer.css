@@ -1,0 +1,24 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-top: 1px solid #dee2e6;
+    text-align: center;
+  }
+  
+  .footer-logo {
+    height: 100px; /* Increased size */
+    cursor: pointer;
+    display: block;
+    margin-right: auto;
+    margin-inline: auto;
+  }
+  
+  .footer-text {
+    margin-left: fit-content;
+    font-size: 14px;
+    color: #555;
+  }
+  

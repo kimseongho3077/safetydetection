@@ -1,0 +1,29 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f8f9fa; /* Background color for the header */
+  }
+  
+  .logo img {
+    cursor: pointer;
+  }
+  
+  .nav {
+    display: flex;
+    gap: 20px; /* Space between nav items */
+  }
+  
+  .nav-item {
+    display: block;
+    padding: 10px 15px; /* Padding for clickable area */
+    color: #333; /* Text color */
+    text-decoration: none; /* Remove underline */
+    background-color: #e7e7e7; /* Background color for nav items */
+    border-radius: 5px; /* Rounded corners */
+  }
+  
+  .nav-item:hover {
+    background-color: #ced4da; /* Change background on hover */
+  }

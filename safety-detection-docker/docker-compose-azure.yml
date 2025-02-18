@@ -1,0 +1,68 @@
+services:
+  backend:
+    build:
+      context: ./backend
+    container_name: backend
+    command: python manage.py runserver 0.0.0.0:8090
+    volumes:
+      - ./backend:/code
+    ports:
+      - "8090:8090"
+    env_file:
+      - .env
+
+  frontend:
+    build:
+      context: ./frontend
+    container_name: frontend
+    volumes:
+      - ./frontend:/app
+    ports:
+      - "3010:3010"
+    depends_on:
+      - backend
+
+
+
+
+# services:
+#   backend:
+#     build:
+#       context: ./backend
+#     container_name: backend
+#     command: gunicorn config.wsgi:application --bind 0.0.0.0:8000
+#     volumes:
+#       - ./backend:/code
+#     ports:
+#       - "8000:8000"
+#     env_file:
+#       - .env
+#     depends_on:
+#       - db
+
+#   frontend:
+#     build:
+#       context: ./frontend
+#     container_name: frontend
+#     volumes:
+#       - ./frontend:/app
+#     ports:
+#       - "5000:5000"
+#     depends_on:
+#       - backend
+
+#   db:
+    # image: mysql:5.7
+    # container_name: db
+    # volumes:
+    #   - mysql_data:/var/lib/mysql
+    # environment:
+    #   MYSQL_ROOT_PASSWORD: !q1w2e3r4
+    #   MYSQL_DATABASE: humandb
+    #   MYSQL_USER: human
+    #   MYSQL_PASSWORD: !q1w2e3r4
+    # ports:
+    #   - "3306:3306"
+
+# volumes:
+#   mysql_data:
