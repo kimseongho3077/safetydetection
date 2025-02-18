@@ -373,7 +373,6 @@ def predict_model2(request):
 
             print("선택된 라벨들: ", selected_labels)  # ['호흡']
             
-            # OPENAI_API_KEY = "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"
             # openai.api_key= OPENAI_API_KEY
             print("open api key : ",openai.api_key)
             
