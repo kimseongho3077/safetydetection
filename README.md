@@ -1,5 +1,7 @@
-# 국사
-국사는 KT의 다양한 통신 서비스가 원활히 제공될 수 있도록 인프라를 지원하는 곳이며, 건물의 화재 및 문제 발생 시 해당 지역에 막대한 통신 피해를 유발
+# 시스템 아키텍처
+<p align="center"> 
+  <img src="https://github.com/kimseongho3077/safetydetection/blob/main/%EC%84%9C%EB%B9%84%EC%8A%A4%20%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98.png" width="1000">
+</p> 
 
 # KT 무인 국사 프로젝트
 <p align="center"> 
